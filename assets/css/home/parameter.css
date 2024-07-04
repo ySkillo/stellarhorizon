@@ -1,0 +1,33 @@
+:root{
+
+    /* color Pattern  */
+    --color_navbar: #0B0B0B;
+    --color_buttomNav: #000000;
+    --color_linkNav: #fff;
+    --color_textBtnNav: #fff;
+
+    --color_main: #000000;
+   
+
+    /* letter Pattern  */
+
+    --fontSize_linkNav: 1.4rem;
+
+
+    /* logo Pattern */
+
+
+
+
+    /* icon Pattern  */
+
+
+    /* Border-radius Pattern */
+
+    --radius_navbar: 15px;
+    --radius_buttonNav: 10px;
+
+    /* format button Pattern */
+    --button_navbar: 13px 45px;
+
+}

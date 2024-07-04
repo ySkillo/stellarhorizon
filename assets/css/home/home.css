@@ -1,0 +1,329 @@
+@import url('./parameter.css');
+@import url('./animation.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    max-width: 1900px;
+    max-height: 1080px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color_navbar);
+    width: calc(100% - 80px);
+    max-width: calc(1900px - 80px);
+    padding: 20px 10%;
+    margin: 20px 40px 0px 40px;
+    border-radius: var(--radius_navbar);
+    z-index: 100;
+}
+.logo-img{
+    width: 195px;
+    height:100%;
+}
+.logo{
+    position: relative;
+    width: 195px;
+    height:50px;
+    margin-left: -50px;
+    margin-right: 50px;
+}
+.logo::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: var(--color_navbar);
+    width: 195px;
+    height:50px;
+    animation: logo 1s linear forwards;
+    animation-delay: 0.5s;
+}
+
+
+
+
+
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    gap: 50px
+}
+
+.nav-items .link{
+    position: relative;
+    color: #fff;
+    font-size: var(--fontSize_linkNav);
+    cursor: pointer;
+}
+
+.nav-items .link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    left: 0;
+    bottom: -32px;
+    transition: all 0.3s;
+}
+
+.nav-items .link:hover::after{
+    width: 100%;
+}
+
+.select-language{
+    border: none;
+    outline: none;
+    font-size: var(--fontSize_linkNav);
+    color: #fff;
+    background: transparent;
+    width: 160px;
+    cursor: pointer;
+}
+
+.select-language .option{
+    color: #000;
+    width: 100%;
+}
+
+
+.contact-button{
+    color: #fff;
+    font-size: 1rem;
+    padding: var(--button_navbar);
+    border-radius: var(--radius_buttonNav);
+    background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    max-width: 1900px;
+    max-height: 1080px;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.globo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+   
+    background: transparent; /* Garante que o conteúdo não ultrapasse os limites do globo */
+}
+
+.orbit {
+    position: relative;
+    width: 270px;
+    height: 100px;
+    border: 1px solid #1400FF;
+    border-radius: 50%;
+    animation: rodar 0.2s linear infinite;
+}
+
+
+.rotating-word {
+    position: absolute;
+    display: flex;
+    color: #fff;
+    font-size: 5rem;
+    z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main .box-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    height: 150px;
+    background: #fff;
+    position: absolute;
+    border-radius: 0px 100px 0px 0px;
+    left: 0;
+    bottom: 0;
+}
+.main .box-social::after{
+    position: absolute;
+    content: '';
+    background-color: #000000;
+    width: 100px;
+    height: 100px;
+    right: -100px;
+    border-radius: 100px;
+    bottom: 0px;
+}
+.main .box-social::before{
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+    width:50px;
+    height: 50px;
+    right: -50px;
+    bottom: 0px;
+}
+
+.box-social .card-social{
+    width: 60px;
+    height: 60px;
+    background: #c9c9c9;
+    box-shadow: 0px 0px 10px -2px #000;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-social .card-social .icon-social{
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.3s;
+}
+.box-social .card-social .icon-social:hover{
+    color: #fff;
+    background: #000;
+    filter: brightness(0.8) blur(1px) contrast(0.8) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+
+
+.message-card-social{
+    position: absolute;
+    padding: 10px 5px;
+    width: 180px;
+    height: 100px;
+    top: -110px;
+    right: -180px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 2px #000;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s;
+}
+
+.message-card-social::after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px 2px #000;
+    bottom: -13px;
+    left: -13px;
+}
+
+.box-social .card-social:hover .message-card-social{
+    opacity: 1;
+}
+.message-card-social .name-social-i,
+.message-card-social .name-social-f,
+.message-card-social .name-social-t {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    color: rgb(92, 92, 92);
+}
+
+
+
+.text-social{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.section{
+    width: 100%;
+    height: 100vh;
+    max-width: 1900px;
+    max-height: 1080px;
+    background: #fff;
+}
