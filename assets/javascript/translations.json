@@ -1,0 +1,45 @@
+{
+    "pt": {
+        "_comment_nav_bar": "/ Nav-bar translation",
+        "nav_home": "Inicio",
+        "nav_about": "Sobre",
+        "nav_services": "Serviços",
+        "nav_team": "Equipe",
+        "nav_projects": "Projetos",
+        "nav_contacts": "Contato",
+
+        "_comment_message_social": "// Message-Icons-Social translation",
+        "textMessage_icon_social" : "Rede social de contato da StellarHorizon conecte-se com:"
+    },
+    "en": {
+        "_comment_nav_bar": "/ Nav-bar translation",
+        "nav_home": "Home",
+        "nav_about": "About",
+        "nav_services": "Services",
+        "nav_team": "Team",
+        "nav_projects": "Projects",
+        "nav_contacts": "Contact",
+
+        "_comment_message_social": "// Message-Icons-Social translation",
+        "textMessage_icon_social" : "StellarHorizon social network connect with:"
+
+    },
+    "es": {
+        "_comment_nav_bar": "/ Nav-bar translation",
+        "nav_home": "Inicio",
+        "nav_about": "Acerca de",
+        "nav_services": "Servicios",
+        "nav_team": "Equipo",
+        "nav_projects": "Proyectos",
+        "nav_contacts": "Contacto",
+
+        "_comment_message_social": "// Message-Icons-Social translation",
+        "textMessage_icon_social" : "La red social StellarHorizon conéctate con:"
+
+
+
+
+
+
+    }
+}

@@ -13,7 +13,8 @@
       "default",
       {
         "ignore": [
-          "-webkit-box-reflect"
+          "-webkit-box-reflect",
+          "backdrop-filter"
         ]
       }
     ]
