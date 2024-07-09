@@ -17,9 +17,9 @@
         </a>
         <nav class="navbar">
             <ul class="nav-items">
-                <li><a href="#" class="link" id="nav_home">Inicio</a></li>
+                <li><a href="#home" class="link" id="nav_home">Inicio</a></li>
                 <li><a href="#" class="link" id="nav_about">Sobre</a></li>
-                <li><a href="#" class="link" id="nav_services">Serviços</a></li>
+                <li><a href="#services" class="link" id="nav_services">Serviços</a></li>
                 <li><a href="#" class="link" id="nav_team">Equipe</a></li>
                 <li><a href="#" class="link" id="nav_projects">Projetos</a></li>
                 <li class="li-select">
@@ -34,7 +34,7 @@
         <a href="" class="contact-button" id="nav_contacts">Contato</a>
     </header>
 
-    <main class="main">
+    <main class="main" id="home">
         <div class="info-logo-main">
             <img src="./assets/img/Logos/stellarhorizon5.png" alt="" class="logo-destaque">
             <p class="text-main">Navegando Além dos Limites.</p>
@@ -54,8 +54,10 @@
             </div>
         </div>
         <div class="blob">
-            <img src="./assets/img/blob.svg" alt="" class="img-blob">
-
+            
+            <div class="img-blob">
+                <img src="./assets/img/man-social.svg" alt="">
+            </div>
             <div class="qualifics">
                 <p>Destacada</p>
             </div>
@@ -112,7 +114,7 @@
             </div>
         </div>
     </main>
-    <section class="section">
+    <section class="section" id="services">
 
     </section>
     <section class="section">

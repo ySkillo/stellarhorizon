@@ -427,21 +427,23 @@ body{
     animation-delay: 1s;
 }
 
-.main .blob .img-blob{
+.main .blob .img-blob {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    animation: blob-animated 1.5s linear alternate infinite;
+    animation: blob-animated 5s linear alternate infinite;
+    animation-delay: 1s;
+    overflow: hidden;
+    border-radius: 100%;
+    position: relative;
+    background: linear-gradient(to bottom, #1400FF, #4584FF);
 }
-
-@keyframes blob-animated {
-    0%{
-        filter: drop-shadow(0px 0px 5px #1500ff11);
-    }
-    100%{
-        filter: drop-shadow(0px 0px 20px #1500ff3f);
-    }
+.main .blob .img-blob img{
+    width: 220px;
+    transform: none;
 }
-
 .main .blob .qualifics{
     position: absolute;
     width: 100%;
@@ -594,16 +596,6 @@ body{
 .text-social{
     font-size: 0.9rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 .section{
     width: 100%;
