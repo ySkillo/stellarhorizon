@@ -14,6 +14,7 @@
     <header class="header">
         <a href="#" class="logo">
             <img src="./assets/img/Navbar/stellarhorizon5.png" alt="" class="logo-img">
+            <img src="./assets/img/Logos/logo StellarHorizon branca png.png" alt="" class="logo-img-mobile">
         </a>
         <nav class="navbar">
             <ul class="nav-items">

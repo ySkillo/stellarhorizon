@@ -1,5 +1,9 @@
 @media (max-width: 480px) {
     /* Estilos para dispositivos móveis */
+    .nav-items{
+        display: none;
+    }
+
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
